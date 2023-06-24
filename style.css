@@ -1,0 +1,31 @@
+ul li{
+    list-style-type: none;
+    font-size: 20px;
+    position: relative;
+    margin: 10px;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    background-image: url(https://media.discordapp.net/attachments/1099973173480525894/1118931366042677258/60248-200.png?width=250&height=250);
+    background-position:center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    left: -30px;
+    top: -3px;
+}
+
+ul li.check::before{
+    background-image: url( https://media.discordapp.net/attachments/1099973173480525894/1118931365728112672/checked.jpeg?width=585&height=585);
+}
+ul li.check{
+    color: #555;
+    text-decoration: line-through;
+}
+span{
+    position: absolute;
+    right: 70%;
+    font-size: 24px;
+}
